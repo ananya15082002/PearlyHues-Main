@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./sign-up.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Adamina:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playfair Display:wght@400;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bentham:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Brygada 1918:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inika:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="sign-up">
+      <section class="vector-parent">
+        <img class="rectangle-icon" alt="" src="./public/rectangle-6.svg" />
+
+        <img class="img-icon" alt="" src="./public/img@2x.png" />
+      </section>
+      <div class="frame-group">
+        <div class="verticalmiddle-inset-wrapper">
+          <div class="verticalmiddle-inset">
+            <div class="divider"></div>
+          </div>
+        </div>
+        <div class="form-log-in">
+          <div class="input-field">
+            <div class="label">Email</div>
+            <div class="description">Description</div>
+            <div class="input">
+              <input class="value" placeholder="Value" type="text" />
+            </div>
+            <div class="error">Error</div>
+          </div>
+          <div class="input-field">
+            <div class="label">Password</div>
+            <div class="description">Description</div>
+            <div class="input">
+              <input class="value" placeholder="Value" type="text" />
+            </div>
+            <div class="error">Error</div>
+          </div>
+          <div class="button-group" id="buttonGroupContainer">
+            <div class="button">
+              <img class="star-icon" alt="" src="./public/star.svg" />
+
+              <div class="button1">Button</div>
+              <img class="star-icon" alt="" src="./public/x.svg" />
+            </div>
+            <div class="button2">
+              <img class="star-icon" alt="" src="./public/star1.svg" />
+
+              <div class="button3">Sign In</div>
+              <img class="star-icon" alt="" src="./public/x1.svg" />
+            </div>
+          </div>
+          <div class="text-link">
+            <div class="text-link1" id="textLink">Do not have an account ?</div>
+          </div>
+        </div>
+      </div>
+      <img class="sign-up-child" alt="" src="./public/group-181@2x.png" />
+    </div>
+
+    <script>
+      var buttonGroupContainer = document.getElementById("buttonGroupContainer");
+      if (buttonGroupContainer) {
+        buttonGroupContainer.addEventListener("click", function (e) {
+          window.location.href = "./HomePage.html";
+        });
+      }
+      
+      var textLink = document.getElementById("textLink");
+      if (textLink) {
+        textLink.addEventListener("click", function (e) {
+          window.location.href = "./NewAccount.html";
+        });
+      }
+      </script>
+  </body>
+</html>
